@@ -1,3 +1,5 @@
+package edu.utsa.cs3443.cobras.model;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
