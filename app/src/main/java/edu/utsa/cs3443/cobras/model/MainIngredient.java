@@ -1,3 +1,6 @@
+package edu.utsa.cs3443.cobras.model;
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mealapp.R;
 
-public class MainMenuActivity extends AppCompatActivity {
+public class MainIngredient extends AppCompatActivity {
 
     private Button btnChicken, btnBeef, btnPork, btnFavorites;
 
