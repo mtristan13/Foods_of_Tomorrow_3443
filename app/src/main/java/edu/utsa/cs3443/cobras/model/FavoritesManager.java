@@ -1,3 +1,5 @@
+package edu.utsa.cs3443.cobras.model;
+
 //import com.example.mealapp.models.Recipe;
 
 import java.util.ArrayList;
