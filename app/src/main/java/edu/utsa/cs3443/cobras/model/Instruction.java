@@ -21,7 +21,7 @@ public class Instruction {
     }
 
     /**
-     * Provides a formatted string for display, e.g., "1. Preheat oven...".
+     * Provides a formatted string
      * @return Formatted instruction string.
      */
     public String getFormattedInstruction() {

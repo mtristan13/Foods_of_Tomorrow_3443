@@ -27,7 +27,7 @@ public class Ingredient {
     }
 
     /**
-     * Provides a formatted string for display, e.g., "1.5 lbs Chicken Breast".
+     * Provides a formatted string for display
      * @return Formatted ingredient string.
      */
     public String getFormattedIngredient() {

@@ -34,8 +34,8 @@ public class RecipeManager {
 
     /**
      * Filters recipes based on protein type and maximum price.
-     * @param protein The protein type to filter by (e.g., "chicken").
-     * @param maxPrice The maximum price category (e.g., 10, 15, 20).
+     * @param protein The protein type to filter by
+     * @param maxPrice The maximum price category
      * @return A new list of matching recipes.
      */
     public List<Recipe> getRecipesByFilter(String protein, int maxPrice) {
