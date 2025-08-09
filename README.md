@@ -13,6 +13,9 @@ Some specific implementations are as follows:
 ## Project Demo
 [Video demo of the app](https://drive.google.com/file/d/1iBq80pApmBos-8oJInfyYTc7FAVby6US/view?usp=drive_link)
 
+## Project UML
+[Project UML](https://drive.google.com/file/d/159Ukn2huO2m0W2DlCCjcSDAjEUZZ3Hal/view?usp=drive_link)
+
 ## Code Style
 By adhering to Model, View, Controller(MVC) and SOLID design principles as well as combining with an Object Oriented Programming(OOP) language like Java, I was able to separte out logic clearly and maintain singular functionality between methods.
 
@@ -30,4 +33,4 @@ By adhering to Model, View, Controller(MVC) and SOLID design principles as well 
 
 ### Known Issues
 
--   **Fish Category:** The "Fish" protein category is present in the user interface, but there are currently no corresponding fish recipes in the provided `recipes.csv` file. Selecting this category will result in an empty recipe list.
+- None
