@@ -12,6 +12,7 @@ Some specific implementations are as follows:
 
 ## Project Demo
 [Video demo of the app](https://drive.google.com/file/d/1iBq80pApmBos-8oJInfyYTc7FAVby6US/view?usp=drive_link)
+[MP4 version](https://drive.google.com/file/d/1PspByLmfvwrE_HClZJuROP42d9NdD4Vr/view?usp=sharing)
 
 ## Project UML
 [Project UML](https://drive.google.com/file/d/159Ukn2huO2m0W2DlCCjcSDAjEUZZ3Hal/view?usp=drive_link)
