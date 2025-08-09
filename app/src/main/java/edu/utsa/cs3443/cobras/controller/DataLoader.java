@@ -40,12 +40,10 @@ public class DataLoader {
         try (InputStream is = context.getAssets().open("recipes.csv");
              CSVReader reader = new CSVReader(new InputStreamReader(is))) {
 
-            // Skip the header line
             reader.readNext();
 
             String[] tokens;
             while ((tokens = reader.readNext()) != null) {
-                // OpenCSV correctly handles quoted commas, so tokens[] is reliable.
                 if (tokens.length < 11) {
                     Log.w(TAG, "Skipping malformed CSV row.");
                     continue;
@@ -57,7 +55,6 @@ public class DataLoader {
                     String protein = tokens[2].trim();
                     int price = Integer.parseInt(tokens[3].trim());
                     String imageFile = tokens[4].trim();
-                    // Nutrition is column 8 (index 8)
                     String[] nutritionTokens = tokens[8].trim().split(",");
                     NutritionInfo nutrition = new NutritionInfo(
                             Integer.parseInt(nutritionTokens[0].trim()),
@@ -65,9 +62,7 @@ public class DataLoader {
                             Integer.parseInt(nutritionTokens[2].trim()),
                             Integer.parseInt(nutritionTokens[3].trim())
                     );
-                    // Ingredients are column 9 (index 9)
                     List<Ingredient> ingredients = parseIngredients(tokens[9].trim());
-                    // Instructions are column 10 (index 10)
                     List<Instruction> instructions = parseInstructions(tokens[10].trim());
 
                     recipes.add(new Recipe(id, name, protein, price, imageFile, nutrition, ingredients, instructions));

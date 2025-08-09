@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import edu.utsa.cs3443.cobras.R;
 
 public class MainActivity extends AppCompatActivity {
-
+    // Inflates landing page
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
