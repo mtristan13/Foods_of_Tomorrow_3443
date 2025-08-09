@@ -3,11 +3,11 @@ package edu.utsa.cs3443.cobras.model;
  * Represents a single step in a recipe's instructions.
  * This is a pure data class (POJO).
  */
-public class Instructions {
+public class Instruction {
     private final int stepNumber;
     private final String description;
 
-    public Instructions(int stepNumber, String description) {
+    public Instruction(int stepNumber, String description) {
         this.stepNumber = stepNumber;
         this.description = description;
     }

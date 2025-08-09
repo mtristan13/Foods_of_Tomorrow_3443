@@ -1,10 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1C2833"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
     tools:context=".ProteinSelectionActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Please Choose Your Protein"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/beefButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:text="Beef" />
+
+        <Button
+            android:id="@+id/porkButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:text="Pork" />
+
+        <Button
+            android:id="@+id/chickenButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:text="Chicken" />
+
+        <Button
+            android:id="@+id/fishButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:text="Fish" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/favoritesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#FFC107"
+        android:text="View Favorites"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

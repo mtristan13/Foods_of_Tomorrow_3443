@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cobras">
         <activity
+            android:name=".BudgetSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProteinSelectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

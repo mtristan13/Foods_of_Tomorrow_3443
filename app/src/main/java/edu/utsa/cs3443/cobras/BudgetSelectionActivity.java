@@ -1,24 +1,37 @@
 package edu.utsa.cs3443.cobras;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import edu.utsa.cs3443.cobras.R;
 
 public class BudgetSelectionActivity extends AppCompatActivity {
+
+    private String proteinType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_budget_selection);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        // Retrieve the protein type passed from the previous activity
+        proteinType = getIntent().getStringExtra("PROTEIN_TYPE");
+
+        Button budget10Button = findViewById(R.id.budget10Button);
+        Button budget15Button = findViewById(R.id.budget15Button);
+        Button budget20Button = findViewById(R.id.budget20Button);
+
+        budget10Button.setOnClickListener(v -> navigateToRecipeList(10));
+        budget15Button.setOnClickListener(v -> navigateToRecipeList(15));
+        budget20Button.setOnClickListener(v -> navigateToRecipeList(20));
+    }
+
+    private void navigateToRecipeList(int maxPrice) {
+        Intent intent = new Intent(this, RecipeListActivity.class);
+        intent.putExtra("FILTER_TYPE", "protein_price");
+        intent.putExtra("PROTEIN_TYPE", proteinType);
+        intent.putExtra("MAX_PRICE", maxPrice);
+        startActivity(intent);
     }
 }
